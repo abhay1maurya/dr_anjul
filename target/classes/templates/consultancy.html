@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a personalized homeopathic consultation with Dr. Anjul">
+  <title>Book Consultation | Dr. Anjul Homeopathy Clinic</title>
+  <link rel="stylesheet" href="css/consultancy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="consult-header">
+    <div class="container">
+      <a href="index.html" class="back-home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+  </header>
+
+  <main class="consult-main">
+    <div class="container">
+      <section class="booking-section">
+        <div class="booking-container">
+          <div class="booking-header">
+            <h1><i class="fas fa-calendar-check"></i> Book Your Consultation</h1>
+            <p class="intro">Schedule your personalized homeopathic consultation with Dr. Anjul. We'll contact you to confirm your appointment.</p>
+          </div>
+
+          <form class="booking-form" id="consultForm">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name" aria-required="true">
+              <i class="fas fa-user input-icon"></i>
+            </div>
+            
+            <div class="form-group">
+              <label for="age">Age <span class="required">*</span></label>
+              <input type="number" id="age" name="age" required placeholder="Enter your age" aria-required="true">
+              <i class="fas fa-birthday-cake input-icon"></i>
+            </div>
+            
+            <div class="form-group">
+                <label for="sex">Sex <span class="required">*</span></label>
+                <select id="sex" name="sex" required aria-required="true">
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+                <i class="fas fa-venus-mars input-icon"></i>
+              </div>
+            
+            <div class="form-group">
+              <label for="address">Address <span class="required">*</span></label>
+              <input type="text" id="address" name="adress" required placeholder="Enter your address" aria-required="true">
+              <i class="fas fa-map-marker-alt input-icon"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email" aria-required="true">
+              <i class="fas fa-envelope input-icon"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="Enter your phone with country code" aria-required="true">
+              <i class="fas fa-phone input-icon"></i>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date <span class="required">*</span></label>
+                <input type="date" id="date" name="date" required aria-required="true">
+                <i class="fas fa-calendar-day input-icon"></i>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Preferred Time <span class="required">*</span></label>
+                <select id="time" name="time" required aria-required="true">
+                  <option value="">Select time</option>
+                  <option value="morning">Morning (9AM-12PM)</option>
+                  <option value="afternoon">Afternoon (1PM-4PM)</option>
+                  <option value="evening">Evening (5PM-8PM)</option>
+                </select>
+                <i class="fas fa-clock input-icon"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="concern">Health Concern <span class="required">*</span></label>
+              <textarea id="concern" name="concern" rows="5" required placeholder="Describe your health concern in detail..." aria-required="true"></textarea>
+              <i class="fas fa-comment-medical textarea-icon"></i>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="consent" name="consent" required aria-required="true">
+              <label for="consent">I agree to the <a href="terms-privacy.html" target="_blank">Terms & Privacy Policy</a> and consent to receiving communications</label>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <span class="btn-text">Book Consultation</span>
+              <i class="fas fa-paper-plane btn-icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <aside class="consult-info">
+        <div class="info-card">
+          <h3><i class="fas fa-info-circle"></i> Consultation Details</h3>
+          <ul class="info-list">
+            <li><i class="fas fa-check-circle"></i> 30-45 minute personalized session</li>
+            <li><i class="fas fa-check-circle"></i> Comprehensive health analysis</li>
+            <li><i class="fas fa-check-circle"></i> Follow-up plan included</li>
+            <li><i class="fas fa-check-circle"></i> Secure video call option available</li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h3><i class="fas fa-headset"></i> Need Help?</h3>
+          <p>Contact our support team for assistance with booking:</p>
+          <div class="contact-methods">
+            <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
+            <a href="mailto:consult@dranjul.com"><i class="fas fa-envelope"></i> consult@dranjul.com</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="js/consultancy.js"></script>
+</body>
+</html>

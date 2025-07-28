@@ -1,0 +1,247 @@
+:root {
+    --primary-color: #2a7f62;
+    --secondary-color: #f8b739;
+    --dark-color: #1a2e3a;
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --text-light: #777;
+    --white: #fff;
+    --gray: #e9ecef;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Policy Header */
+.policy-header {
+    background: linear-gradient(135deg, var(--primary-color), #1f9d7a);
+    color: var(--white);
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.policy-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/pattern-bg.svg') repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+}
+
+.back-button:hover {
+    color: var(--secondary-color);
+    transform: translateX(-5px);
+}
+
+.header-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content .logo {
+    height: 70px;
+    margin-bottom: 1rem;
+}
+
+.policy-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.policy-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Policy Container */
+.policy-container {
+    padding: 3rem 0;
+}
+
+.policy-section {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+}
+
+.policy-section h2 {
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 1.2rem 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.policy-content {
+    padding: 2rem;
+}
+
+.policy-item {
+    margin-bottom: 2rem;
+}
+
+.policy-item:last-child {
+    margin-bottom: 0;
+}
+
+.policy-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.policy-item h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.policy-content ul {
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+}
+
+.policy-content li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.policy-content p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.contact-section a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-section a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Policy Footer */
+.policy-footer {
+    background-color: var(--dark-color);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.policy-footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .policy-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .policy-header {
+        padding: 1.5rem 0;
+    }
+    
+    .policy-header h1 {
+        font-size: 2rem;
+    }
+    
+    .policy-content {
+        padding: 1.5rem;
+    }
+    
+    .policy-section h2 {
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .policy-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header-content .logo {
+        height: 60px;
+    }
+    
+    .policy-content {
+        padding: 1.2rem;
+    }
+    
+    .policy-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .policy-item h3 {
+        font-size: 1.1rem;
+    }
+}

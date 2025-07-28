@@ -1,0 +1,136 @@
+.consultancy-section {
+  background: #f0faff;
+  padding: 60px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  max-width: 2000px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.consultancy-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.consultancy-text {
+  flex: 1;
+  padding-right: 30px;
+  order: 1;
+}
+
+.consultancy-image {
+  flex: 1.2; /* Increased size for image */
+  text-align: center;
+  order: 2;
+}
+
+.consultancy-image img {
+  width: 100%;
+  max-width: 450px; /* Increased for desktop */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.consultancy-section h2 {
+  font-size: 2.5rem;
+  color: #1e2d3b;
+  margin-bottom: 20px;
+}
+
+.consultancy-intro {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.consultancy-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.consultancy-features li {
+  margin: 12px 0;
+  font-size: 1.05rem;
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+}
+
+.consultancy-features i {
+  color: #27ae60;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-consult {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.3);
+}
+
+.btn-consult:hover {
+  background-color: #005fa3;
+  box-shadow: 0 6px 16px rgba(0, 95, 163, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .consultancy-content {
+    flex-direction: column;
+  }
+
+  .consultancy-text,
+  .consultancy-image {
+    flex: 1;
+    text-align: center;
+    padding: 0;
+  }
+
+  .consultancy-text {
+    order: 1;
+    padding-bottom: 20px;
+  }
+
+  .consultancy-image {
+    order: 2;
+  }
+
+  .consultancy-section h2 {
+    font-size: 2rem;
+  }
+
+  .btn-consult {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  .consultancy-image img {
+    max-width: 100%;
+  }
+}
+
+/* Animation base */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}

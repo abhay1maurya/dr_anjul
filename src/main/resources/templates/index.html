@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Anjul's Homeopathy</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/youtube.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/consultancyh.css">
+  <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/eventgall.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/testimonial.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+
+</head>
+<body>
+<!-- nav baar -->
+  <header class="main-header">
+  <div class="logo">
+    <a href="#home" class="home-link">
+  <img src="images/logo.png" alt="Dr. ANJUL's Homeopathy Logo" />
+  <h1>Dr. ANJUL's <span>HOMEOPATHY</span></h1>
+</a>
+
+  </div>
+
+  <!-- Hamburger icon -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#consultancy">Consultancy</a>
+    <a href="#youtube">YouTube</a>
+    <a href="#events">Events</a>
+    <a href="#event-gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- home section-->
+<section id="home">
+
+  <h1>Welcome to Dr. Anjul's Homeopathy</h1>
+  <p>Healing the Root, Not Just the Routine</p>
+  <a href="consultancy" class="btn">Book a Consultation</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-container">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="images/drimg.jpg" alt="Dr. Anjul" loading="lazy">
+          <div class="image-overlay">
+            <div class="years-badge">
+              <span class="years-number">15+</span>
+              <span class="years-text">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">Meet <span>Dr. Anjul</span></h2>
+          <div class="section-subtitle">Homeopathy Specialist</div>
+          
+          <p class="highlight-paragraph">
+            <strong>Dr. Anjul</strong> is a devoted homeopathy practitioner known for her gentle approach and deep-rooted commitment to natural healing.
+          </p>
+          
+          <ul class="about-features">
+            <li><i class="fas fa-check-circle"></i> Classical homeopathy expert</li>
+            <li><i class="fas fa-check-circle"></i> Personalized treatment plans</li>
+            <li><i class="fas fa-check-circle"></i> Holistic mind-body approach</li>
+            <li><i class="fas fa-check-circle"></i> Online consultations available</li>
+          </ul>
+          
+          <p>
+            Through her online consultancy services and educational YouTube content, Dr. Anjul continues to empower people to take charge of their wellness journey. Her mission is clear and impactful:
+          </p>
+          
+          <div class="mission-quote">
+            <i class="fas fa-quote-left"></i>
+            <blockquote>"To bring health and harmony to every home through the power of homeopathy."</blockquote>
+          </div>
+          
+          <div class="about-cta">
+            <a href="#consultation" class="btn btn-primary">Book Consultation</a>
+            <a href="https://youtube.com" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-youtube"></i> Watch Videos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features/Highlights Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section__title" align="center">Why Choose Our Homeopathic Care</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="feature__title">Experienced Practitioner</h3>
+                    <p class="feature__text">20+ years of experience in homeopathic treatment</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature__title">Holistic Approach</h3>
+                    <p class="feature__text">Treating the root cause, not just symptoms</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="feature__title">Natural Remedies</h3>
+                    <p class="feature__text">Safe and effective natural treatments</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="feature__title">Child-Friendly</h3>
+                    <p class="feature__text">Gentle treatments suitable for all ages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section__title" align="center">Patient Experiences</h2>
+            <div class="testimonials__slider">
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        <p>"Dr. Anjul's treatment helped me overcome chronic migraines when nothing else worked."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <img src="images/testimonial1.jpg" alt="Patient" loading="lazy">
+                        <h4>Rahul Sharma</h4>
+                        <span>New Delhi</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        <p>"My child's allergies improved significantly after just a few weeks of treatment."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <img src="images/testimonial2.jpg" alt="Patient" loading="lazy">
+                        <h4>Priya Patel</h4>
+                        <span>Mumbai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__controls">
+                <button class="slider__prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider__next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- CINSULTANCY-->
+ <section id="consultancy" class="consultancy-section">
+  <div class="consultancy-content">
+    <div class="consultancy-text fade-in-up">
+      <h2>Consultancy Services</h2>
+      <p class="consultancy-intro">
+        Experience compassionate, personalized care with Dr. Anjul’s homeopathy consultancy. 
+        Every consultation is tailored to your individual health needs, aiming to identify the root causes rather than just suppress symptoms. 
+        Her holistic approach promotes long-lasting wellness—naturally.
+      </p>
+
+      <ul class="consultancy-features">
+        <li><i class="fas fa-check-circle"></i> One-on-one virtual consultations</li>
+        <li><i class="fas fa-check-circle"></i> Personalized treatment for chronic and acute conditions</li>
+        <li><i class="fas fa-check-circle"></i> 100% natural and side-effect-free remedies</li>
+        <li><i class="fas fa-check-circle"></i> Confidential, empathetic, and patient-centered care</li>
+      </ul>
+
+      <a href="consultancy" class="btn-consult">Book a Consultation</a>
+    </div>
+
+    <div class="consultancy-image fade-in-up">
+      <img src="images/consult.jpg" alt="Homeopathy Consultancy with Dr. Anjul" />
+    </div>
+  </div>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll('.fade-in-up');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // Trigger only once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => observer.observe(el));
+});
+</script>
+  
+</section>
+
+
+
+<!-- YOUTUBE-->
+<section id="youtube">
+  <h2>Watch Dr. Anjul on YouTube</h2>
+  <p class="youtube-subtitle">Explore insightful videos on homeopathy, treatments, and patient success stories.</p>
+  <div class="video-scroll-container">
+    <div class="video-card">
+      <h4>Latest Video</h4>
+      <iframe src="https://www.youtube.com/embed/og3lLQzkpOM?si=dyD3amkcDlq2bmzy" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h4>Popular Video 1</h4>
+      <iframe src="https://www.youtube.com/embed/qBugESGvrQ0?si=1EsswMFO2gjVtwIx" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h4>Popular Video 2</h4>
+      <iframe src="https://www.youtube.com/embed/pD53jL541rQ?si=9DOWnI0SeEhQyokT" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h4>Popular Video 3</h4>
+      <iframe src="https://www.youtube.com/embed/4pt6Z-yxzy4?si=SIIe6l6BA6TiytZx" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-card">
+      <h4>Playlist</h4>
+      <iframe src="https://www.youtube.com/embed/videoseries?si=TqMIMfEOlppel8ze&amp;list=PLegX3WdunZQlrQ4KfCK9_0yZffUT9EbP_" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- EVENTS-->
+<section id="events" class="events-section">
+  <h2>Upcoming Events</h2>
+  <div class="events-list">
+    <div class="event-card" data-event="event1">
+      <h3>Free Homeopathy Camp</h3>
+      <p><strong>Date:</strong> 20 May 2025</p>
+      <p><strong>Location:</strong> Rudrapur, Uttarakhand</p>
+      <button class="more-info-btn">More Info</button>
+      <div class="event-details">
+        <p><strong>Description:</strong> Join Dr. Anjul for a free consultation and awareness camp on natural healing methods.</p>
+      </div>
+    </div>
+
+    <div class="event-card" data-event="event2">
+      <h3>Online Health Webinar</h3>
+      <p><strong>Date:</strong> 28 May 2025</p>
+      <p><strong>Location:</strong> Zoom (Online)</p>
+      <button class="more-info-btn">More Info</button>
+      <div class="event-details">
+        <p><strong>Description:</strong> A virtual talk on boosting immunity through holistic treatment approaches.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="load-more-btn" id="load-more-events">Load More</button>
+</section>
+
+
+<!-- Event Gallery-->
+<section id="event-gallery" class="gallery-section">
+  <h2>Event Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/camp.jpg" alt="Camp Event" class="gallery-img" />
+      <div class="overlay"><p>Camp Event</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/webinar.jpg" alt="Health Webinar" class="gallery-img" />
+      <div class="overlay"><p>Health Webinar</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/clinic.jpg" alt="Dr. Anjul with Patients" class="gallery-img" />
+      <div class="overlay"><p>Dr. Anjul with Patients</p></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/consult.jpg" alt="Consultation Setup" class="gallery-img" />
+      <div class="overlay"><p>Consultation Setup</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!--CONTACT-->
+<section id="contact">
+  <h2>Connect with Me on Social Media</h2>
+  <div class="social-icons">
+    <a href="https://www.youtube.com/@DrAnjul" target="_blank" title="YouTube" data-tooltip="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100087406594143" target="_blank" title="Facebook" data-tooltip="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/doctoranjul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram" data-tooltip="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://x.com/Doctor_Anjul?t=UhCxJgKHCAw_fH_6T0By9A&s=09" target="_blank" title="X (formerly Twitter)" data-tooltip="X">
+  		<i class="fab fa-x-twitter"></i>
+	</a>
+	<a href="https://www.threads.net/@doctoranjul" target="_blank" title="Threads" data-tooltip="Threads">
+  		<i class="fab fa-threads"></i>
+	</a>
+
+    <a href="mailto:dranjul06@gmail.com" title="Email" data-tooltip="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <img src="images/logo.png" alt="Dr. Anjul Homeopathy Logo" class="footer__logo">
+                    <p class="footer__about">Providing compassionate homeopathic care for over two decades.</p>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+    					<li><a href="#consultancy">Consultancy</a></li>
+    					<li><a href="#youtube">YouTube</a></li>
+    					<li><a href="#events">Events</a></li>
+    					<li><a href="#event-gallery">Gallery</a></li>
+    					<li><a href="#contact">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healing Street, New Delhi</li>
+                        <li><i class="fas fa-phone"></i> +91 XXXXX XXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@dranjulhomeo.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <form class="footer__newsletter">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                    <p class="footer__disclaimer">Get health tips and updates directly to your inbox.</p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Dr. Anjul Homeopathy. All Rights Reserved.</p>
+                <div class="footer__legal">
+                    <a href="terms" class="tc">Privacy Policy</a>
+                    <a href="terms" class="tc">Terms of Service</a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="js/index.js"></script>
+<script src="js/home.js"></script>
+<script src="js/about.js"></script>
+<script src="js/youtube.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/events.js"></script>
+<script src="js/eventgall.js"></script>
+<script src="js/testimonial.js"></script>
+
+
+</body>
+</html>

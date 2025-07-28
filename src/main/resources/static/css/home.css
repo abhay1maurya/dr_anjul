@@ -1,0 +1,70 @@
+#home {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url("/images/home-bg.jpg") center center/cover no-repeat; /* Replace with your image */
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+#home h1,
+#home p,
+#home .btn {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+#home.loaded h1,
+#home.loaded p,
+#home.loaded .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#home p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+#home .btn {
+  display: inline-block;
+  background-color: #ff5757;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#home .btn:hover {
+  background-color: #e73e3e;
+  transform: scale(1.05);
+}

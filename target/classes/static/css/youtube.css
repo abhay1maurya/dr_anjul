@@ -1,0 +1,91 @@
+#youtube {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+#youtube h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.youtube-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.video-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 24px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.video-card {
+  flex: 0 0 auto;
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-card h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+  margin: 10px 0;
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Scrollbar styling */
+.video-scroll-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.video-scroll-container::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 5px;
+}
+
+.video-scroll-container::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .video-card {
+    width: 280px;
+  }
+
+  #youtube h2 {
+    font-size: 2rem;
+  }
+
+  .youtube-subtitle {
+    font-size: 1rem;
+  }
+}

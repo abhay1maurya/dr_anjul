@@ -1,136 +1,375 @@
+/* Consultancy Section Styles */
 .consultancy-section {
-  background: #f0faff;
-  padding: 60px 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  max-width: 2000px;
-  margin:0 auto;
+  background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%);
+  position: relative;
   overflow: hidden;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+}
+
+.consultancy-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" opacity="0.03"><path d="M30,30 Q50,10 70,30 T90,50 Q70,70 50,90 T10,50 Q30,30 50,10 T90,30" fill="none" stroke="%232a7f62" stroke-width="1"/></svg>');
+  background-size: 120px;
+  background-repeat: repeat;
+  z-index: 0;
 }
 
 .consultancy-content {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 40px;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .consultancy-text {
   flex: 1;
-  padding-right: 30px;
-  order: 1;
+  min-width: 300px;
+  max-width: 600px;
+  animation: fadeInLeft 0.8s ease-out forwards;
 }
 
 .consultancy-image {
-  flex: 1.2; /* Increased size for image */
-  text-align: center;
-  order: 2;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  position: relative;
+  animation: fadeInRight 0.8s ease-out forwards;
 }
 
-.consultancy-image img {
-  width: 100%;
-  max-width: 450px; /* Increased for desktop */
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.section-header {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.section-subtitle {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #2a7f62;
+  background: rgba(42, 127, 98, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .consultancy-section h2 {
-  font-size: 2.5rem;
-  color: #1e2d3b;
-  margin-bottom: 20px;
+  font-size: 2.3rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2a7f62 0%, #66bb6a 100%);
+  border-radius: 2px;
+  margin: 1.5rem 0;
 }
 
 .consultancy-intro {
-  font-size: 1.15rem;
-  color: #444;
-  margin-bottom: 25px;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #3d4d4a;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.highlight {
+  background: linear-gradient(120deg, rgba(42, 127, 98, 0.2) 0%, rgba(42, 127, 98, 0) 100%);
+  padding: 0 0.3rem;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
 .consultancy-features {
   list-style: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
-.consultancy-features li {
-  margin: 12px 0;
-  font-size: 1.05rem;
-  color: #2d2d2d;
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+  padding: 1rem 1.3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #2a7f62 0%, #66bb6a 100%);
+  border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 6px;
 }
 
-.consultancy-features i {
-  color: #27ae60;
-  margin-right: 10px;
-  font-size: 1.2rem;
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.feature-text h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0.3rem;
+  font-weight: 600;
+
+}
+
+.feature-text p {
+  font-size: 0.95rem;
+  color: #5a6a67;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 5rem;
 }
 
 .btn-consult {
-  display: inline-block;
-  background-color: #0077cc;
-  color: #fff;
-  padding: 14px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background: linear-gradient(90deg, #2a7f62 0%, #66bb6a 100%);
+  color: white;
+  padding: 1rem 2rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.3);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(42, 127, 98, 0.2);
+  border: none;
+  width: fit-content;
+}
+
+.btn-consult svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
 }
 
 .btn-consult:hover {
-  background-color: #005fa3;
-  box-shadow: 0 6px 16px rgba(0, 95, 163, 0.4);
+  box-shadow: 0 8px 25px rgba(42, 127, 98, 0.3);
+  transform: translateY(-3px);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.btn-consult:hover svg {
+  transform: translateX(5px);
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #5a6a67;
+  background: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  width: fit-content;
+}
+
+.trust-badge svg {
+  width: 18px;
+  height: 18px;
+  color: #2a7f62;
+}
+
+.image-wrapper {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  	
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+  
+}
+
+.image-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(42, 127, 98, 0.15) 0%, rgba(42, 127, 98, 0) 100%);
+  z-index: 1;
+  
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #2a7f62 0%, #66bb6a 100%);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(42, 127, 98, 0.3);
+  z-index: 2;
+}
+
+.experience-badge svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  .consultancy-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .consultancy-content {
+    gap: 3rem;
+  }
+  
+  .consultancy-section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 900px) {
   .consultancy-content {
     flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
-
+  
   .consultancy-text,
   .consultancy-image {
-    flex: 1;
-    text-align: center;
-    padding: 0;
-  }
-
-  .consultancy-text {
-    order: 1;
-    padding-bottom: 20px;
-  }
-
-  .consultancy-image {
-    order: 2;
-  }
-
-  .consultancy-section h2 {
-    font-size: 2rem;
-  }
-
-  .btn-consult {
-    padding: 12px 24px;
-    font-size: 0.95rem;
-  }
-
-  .consultancy-image img {
     max-width: 100%;
+    text-align: center;
+  }
+  
+  .section-header {
+    text-align: center;
+  }
+  
+  .divider {
+    margin: 1.5rem auto;
+  }
+  
+  .cta-container {
+    align-items: center;
+  }
+  
+  .experience-badge {
+    right: 20px;
   }
 }
 
-/* Animation base */
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease, transform 1s ease;
+@media (max-width: 650px) {
+  .consultancy-section {
+    padding: 3rem 1rem;
+  }
+  
+  .consultancy-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .consultancy-intro {
+    font-size: 1rem;
+  }
+  
+  .feature-item {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+  
+  .experience-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 1.5rem;
+    justify-content: center;
+    width: 80%;
+  }
 }
 
-.fade-in-up.show {
-  opacity: 1;
-  transform: translateY(0);
+@media (max-width: 480px) {
+  .consultancy-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .btn-consult {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
 }

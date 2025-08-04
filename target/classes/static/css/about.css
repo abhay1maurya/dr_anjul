@@ -1,167 +1,372 @@
 /* === About Section Styles === */
-
 .about-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" opacity="0.03"><path d="M30,30 Q50,10 70,30 T90,50 Q70,70 50,90 T10,50 Q30,30 50,10 T90,30" fill="none" stroke="%232a7f62" stroke-width="1"/></svg>');
+  background-size: 120px;
+  background-repeat: repeat;
+  z-index: 0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
 }
 
+/* Image Styles */
 .about-image {
-  flex: 1 1 40%;
+  flex: 1 1 400px;
+  max-width: 500px;
   position: relative;
 }
 
 .image-wrapper {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: all 0.5s ease;
+}
+
+.image-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
 }
 
 .image-wrapper img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
 }
 
 .image-overlay {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
 }
 
 .years-badge {
-  background-color: #2e7d32;
+  background: linear-gradient(135deg, #2a7f62 0%, #66bb6a 100%);
   color: #fff;
-  padding: 10px 16px;
-  border-radius: 8px;
+  padding: 12px 20px;
+  border-radius: 10px;
   text-align: center;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .years-number {
-  font-size: 1.5rem;
-  display: block;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 2px;
 }
 
 .years-text {
   font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
+
+
+/* Content Styles */
 .about-content {
-  flex: 1 1 55%;
+  flex: 1 1 550px;
+  max-width: 600px;
+  
 }
 
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #1a237e;
+
+
+.about-section-title {
+  font-size: 2.3rem;
+  margin-top: 0;
+  color: #1a1a1a;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
-.section-title span {
-  color: #2e7d32;
+.about-section-title span {
+  color: #2a7f62;
+  position: relative;
 }
 
-.section-subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: #666;
+.about-section-title span::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(42, 127, 98, 0.2);
+  z-index: -1;
 }
 
-.highlight-paragraph {
-  font-size: 1rem;
+.about-section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #5a6a67;
+  line-height: 1.6;
+}
+
+.about-highlight-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2a7f62;
+}
+
+.about-highlight-card p {
+  font-size: 1.05rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  line-height: 1.7;
+  color: #3d4d4a;
+  margin: 0;
 }
 
-.about-features {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
+.about-highlight-card p strong {
+  color: #2a7f62;
 }
 
-.about-features li {
-  margin-bottom: 10px;
+/* Features Grid */
+.about-features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-feature-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-feature-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(42, 127, 98, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a7f62;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.about-feature-content h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.about-feature-content p {
   font-size: 0.95rem;
-  color: #333;
+  color: #5a6a67;
+  line-height: 1.5;
+  margin: 0;
 }
 
-.about-features i {
-  color: #2e7d32;
-  margin-right: 8px;
+.about-description p {
+  font-size: 1rem;
+  color: #5a6a67;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
-.mission-quote {
-  background: #e3f2fd;
-  padding: 15px 20px;
-  border-left: 4px solid #2196f3;
-  margin-bottom: 20px;
+/* Mission Card */
+.mission-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #2a7f62, #66bb6a);
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: rgba(42, 127, 98, 0.1);
+  margin-bottom: 1rem;
+}
+
+.mission-card blockquote {
+  font-size: 1.2rem;
   font-style: italic;
+  color: #3d4d4a;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  position: relative;
 }
 
+.signature {
+  font-weight: 600;
+  color: #2a7f62;
+  font-style: normal;
+}
+
+/* CTA Buttons */
 .about-cta {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: 600;
-  transition: background 0.3s;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn i {
+  font-size: 1.1rem;
 }
 
 .btn-primary {
-  background-color: #2e7d32;
-  color: #fff;
+  background: linear-gradient(90deg, #2a7f62 0%, #66bb6a 100%);
+  color: white;
+  box-shadow: 0 5px 15px rgba(42, 127, 98, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: #1b5e20;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(42, 127, 98, 0.3);
 }
 
 .btn-secondary {
-  background-color: #c62828;
-  color: #fff;
+  background: white;
+  color: #2a7f62;
+  border: 2px solid #2a7f62;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .btn-secondary:hover {
-  background-color: #b71c1c;
+  background: rgba(42, 127, 98, 0.05);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* === Responsive Design === */
+@media (max-width: 1024px) {
+  .about-container {
+    gap: 3rem;
+  }
+  
+  .about-section-title {
+    font-size: 2.4rem;
+  }
+}
 
 @media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+  
   .about-container {
     flex-direction: column;
   }
-
-  .about-image,
-  .about-content {
+  
+  .about-image, .about-content {
     flex: 1 1 100%;
+    max-width: 100%;
   }
-
-  .section-title {
-    font-size: 1.6rem;
+  
+  .image-wrapper {
+    transform: none;
   }
+  
+  .about-section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .about-section-tagline, .about-section-subtitle {
+    text-align: center;
+  }
+  
+  .about-features-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-cta {
+    justify-content: center;
+  }
+}
 
+@media (max-width: 480px) {
+  .about-section-title {
+    font-size: 1.8rem;
+  }
+  
   .btn {
     width: 100%;
-    text-align: center;
+    justify-content: center;
+  }
+  
+  .mission-card {
+    padding: 1.5rem;
+  }
+  
+  .mission-card blockquote {
+    font-size: 1.1rem;
   }
 }

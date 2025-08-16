@@ -5,30 +5,19 @@ This is a web project for **Dr. Anjul Homeopathy Website**, built with HTML, CSS
 
 ---
 
-## MIT License File (`LICENSE`)
-
-Here’s the standard MIT License text; you can place this in a file named `LICENSE` at the root of the repository:
-
-```text
-MIT License
+Custom License – All Rights Reserved
 
 Copyright (c) 2025 abhay1maurya
 
-Permission is hereby granted, free of charge, to any person obtaining a copy 
-of this software and associated documentation files (the “Software”), to deal 
-in the Software without restriction, including without limitation the rights 
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
-copies of the Software, and to permit persons to whom the Software is 
-furnished to do so, subject to the following conditions:
+All rights are reserved. Unauthorized copying, reproduction, modification, 
+distribution, or use of this software or any portion of it is strictly 
+prohibited without the prior **written and signed permission** of the author.
 
-The above copyright notice and this permission notice shall be included in 
-all copies or substantial portions of the Software.
+No part of this project may be used in any form or by any means, 
+including copying, storing, transmitting, or adapting, without explicit 
+authorization.
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS 
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
-THE SOFTWARE.
+Any violation of these terms will be considered an infringement of copyright 
+and may result in legal action.
 
+For permissions, please contact the author directly.

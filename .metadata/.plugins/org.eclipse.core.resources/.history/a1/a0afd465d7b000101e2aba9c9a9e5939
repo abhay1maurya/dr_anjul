@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Anjul's Homeopathy</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/youtube.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/consultancyh.css">
+  <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/eventgall.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/testimonial.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+
+</head>
+<body>
+<<!-- Modern Navigation Bar -->
+<header class="main-header">
+  <div class="header-container">
+    <a href="#home" class="brand-logo">
+      <img src="images/logo.png" alt="Dr. Anjul's Homeopathy Logo" class="logo-img" loading="lazy">
+      <div class="logo-text">
+        <span class="logo-title">Dr. Anjul's</span>
+        <span class="logo-subtitle">Homeopathy</span>
+      </div>
+    </a>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="menu-icon"></span>
+      <span class="menu-icon"></span>
+      <span class="menu-icon"></span>
+    </button>
+
+    <!-- Main Navigation -->
+    <nav class="main-navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#consultancy" class="nav-link">Consultancy</a></li>
+        <li class="nav-item"><a href="#youtube" class="nav-link">YouTube</a></li>
+        <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="#event-gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- home section-->
+<section id="home">
+
+  <h1>Welcome to Dr. Anjul's Homeopathy</h1>
+  <p>Healing the Root, Not Just the Routine</p>
+  <a href="consultancy" class="btn">Book a Consultation</a>
+  
+  
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-container">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="images/drimg.jpg" alt="Dr. Anjul - Homeopathy Specialist" loading="lazy">
+          <div class="image-overlay">
+            <div class="years-badge">
+              <span class="years-number">15+</span>
+              <span class="years-text">Years Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="mission-card">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <blockquote>"To bring health and harmony to every home through the power of homeopathy."</blockquote>
+            <div class="signature">
+              <span>— Dr. Anjul</span>
+            </div>
+          </div>
+      </div>
+      
+
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="about-section-title">Meet <span>Dr. Anjul</span></h2>
+          <div class="about-section-subtitle">Homeopathy Specialist & Holistic Healer</div>
+          
+          <div class="about-highlight-card">
+            <p><strong>Dr. Anjul</strong> is a devoted homeopathy practitioner known for her gentle approach and deep-rooted commitment to natural healing.</p>
+          </div>
+          
+          <div class="about-features-container">
+            <div class="about-feature-column">
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <i class="fas fa-mortar-pestle"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h3>Classical Homeopathy</h3>
+                  <p>Authentic Hahnemannian approach for lasting results</p>
+                </div>
+              </div>
+              
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <i class="fas fa-user-cog"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h3>Personalized Care</h3>
+                  <p>Tailored treatment plans for each individual</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-feature-column">
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h3>Holistic Approach</h3>
+                  <p>Treating mind, body and spirit together</p>
+                </div>
+              </div>
+              
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <i class="fas fa-laptop-medical"></i>
+                </div>
+                <div class="about-feature-content">
+                  <h3>Online Consultations</h3>
+                  <p>Accessible care from anywhere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-description">
+            <p>Through her online consultancy services and educational YouTube content, Dr. Anjul continues to empower people to take charge of their wellness journey. Her mission is clear and impactful:</p>
+          </div>
+          
+          
+          
+          <div class="about-cta">
+            <a href="#consultancy" class="btn btn-primary">
+              <i class="fas fa-calendar-check"></i> Book Consultation
+            </a>
+            <a href="https://www.youtube.com/@DrAnjul" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-youtube"></i> Watch Videos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features/Highlights Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="features__title" align="center">Why Choose Our Homeopathic Care</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="feature__title">Experienced Practitioner</h3>
+                    <p class="feature__text">20+ years of experience in homeopathic treatment</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature__title">Holistic Approach</h3>
+                    <p class="feature__text">Treating the root cause, not just symptoms</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="feature__title">Natural Remedies</h3>
+                    <p class="feature__text">Safe and effective natural treatments</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="feature__title">Child-Friendly</h3>
+                    <p class="feature__text">Gentle treatments suitable for all ages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="testimonials__title" align="center">Patient Experiences</h2>
+            <div class="testimonials__divider"></div>
+            <div class="testimonials__slider">
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        <p>"Dr. Anjul's treatment helped me overcome chronic migraines when nothing else worked."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <img src="images/testimonial1.jpg" alt="Patient" loading="lazy">
+                        <h4>Rahul Sharma</h4>
+                        <span>New Delhi</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        <p>"My child's allergies improved significantly after just a few weeks of treatment."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <img src="images/testimonial2.jpg" alt="Patient" loading="lazy">
+                        <h4>Priya Patel</h4>
+                        <span>Mumbai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__controls">
+                <button class="slider__prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider__next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- CONSULTANCY-->
+ <section id="consultancy" class="consultancy-section">
+  <div class="consultancy-content">
+    <div class="consultancy-text">
+      <div class="section-header">
+        
+        <h2>Personalized Homeopathy Consultancy</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <p class="consultancy-intro">
+        Experience <span class="highlight">compassionate, personalized care</span> with Dr. Anjul's homeopathy consultancy. 
+        Every consultation is <span class="highlight">tailored to your individual health needs</span>, aiming to identify 
+        the root causes rather than just suppress symptoms. Her holistic approach promotes 
+        <span class="highlight">long-lasting wellness—naturally</span>.
+      </p>
+
+      <ul class="consultancy-features">
+        <li class="feature-item">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.5 16.5L4 11l1.41-1.41L9.5 13.67 18.59 4.5 20 6z"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>One-on-one Virtual Consultations</h3>
+            <p>Personalized attention from the comfort of your home</p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.5 16.5L4 11l1.41-1.41L9.5 13.67 18.59 4.5 20 6z"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>Personalized Treatment Plans</h3>
+            <p>Custom solutions for chronic and acute conditions</p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.5 16.5L4 11l1.41-1.41L9.5 13.67 18.59 4.5 20 6z"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>100% Natural Remedies</h3>
+            <p>Safe, effective, and free from side effects</p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.5 16.5L4 11l1.41-1.41L9.5 13.67 18.59 4.5 20 6z"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>Patient-Centered Care</h3>
+            <p>Confidential and empathetic approach to healing</p>
+          </div>
+        </li>
+      </ul>
+
+      
+    </div>
+<div>
+    <div class="consultancy-image">
+      <div class="image-wrapper">
+        <img src="images/consultancy.jpg" alt="Homeopathy Consultancy with Dr. Anjul" loading="lazy" />
+        <div class="image-highlight"></div>
+      </div>
+      <div class="experience-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.5 12c0-1.81-1.42-3.29-3.21-3.42-.15-.01-.27-.11-.29-.26v-.09c0-.5-.41-.91-.91-.91h-1.09c-.5 0-.91.41-.91.91v.09c-.02.15-.14.25-.29.26-1.79.13-3.21 1.61-3.21 3.42 0 1.29.76 2.4 1.86 2.93l-.78 2.33c-.1.3.05.63.35.73.07.03.15.04.22.04.22 0 .43-.15.51-.36l.8-2.38h3.6l.8 2.38c.08.21.29.36.51.36.07 0 .15-.01.22-.04.3-.1.45-.43.35-.73l-.78-2.33c1.1-.53 1.86-1.64 1.86-2.93zm-7.5 0c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1zm4 0c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1zm-8 0c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1z"/>
+        </svg>
+        <span>15+ Years of Healing Experience</span>
+      </div>
+    </div>
+    
+    <div class="cta-container">
+        <a href="consultancy" class="btn-consult">
+          <span>Book a Consultation</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </a>
+        <div class="trust-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1.06 13.54L7.4 12l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41-5.64 5.66z"/>
+          </svg>
+          <span>Trusted by 500+ patients</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- YOUTUBE-->
+<section id="youtube" class="youtube-section">
+  <div class="youtube-section-container">
+    <div class="youtube-section-header">
+
+      <h2 class="youtube-section-title">Learn From Dr. Anjul's Expertise</h2>
+      <div class="youtube-divider" ></div>
+      <p class="youtube-section-description">Explore our YouTube channel for in-depth knowledge on homeopathy, patient stories, and holistic health tips</p>
+      <p class="youtube-section-subtitle">Discover holistic healing through our educational videos, patient success stories, and treatment insights</p>
+    </div>
+
+    <div class="video-carousel">
+      <button class="carousel-nav prev" aria-label="Previous video">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+        </svg>
+      </button>
+      
+      <div class="video-track">
+        <div class="video-card featured">
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/og3lLQzkpOM?si=dyD3amkcDlq2bmzy" allowfullscreen loading="lazy"></iframe>
+            <span class="video-badge">Latest</span>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">How can I get glowing skin naturally?‪</h3>
+            <p class="video-desc">Learn how to get glowing skin naturally</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/qBugESGvrQ0?si=1EsswMFO2gjVtwIx" allowfullscreen loading="lazy"></iframe>
+            <span class="video-badge">Popular</span>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Height बढ़ाना हुआ आसान, अपनाये HOMOEPATHY, और देखे कमाल!!</h3>
+            <p class="video-desc">Increase your height easily – try Homeopathy and see the magic!</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/pD53jL541rQ?si=9DOWnI0SeEhQyokT" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Dangers of Low Vitamin D and How to Avoid Them. Crystal clear explanation!</h3>
+            <p class="video-desc">Low Vitamin D reduces calcium absorption, leading to brittle bones, osteoporosis, and higher fracture risk</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/4pt6Z-yxzy4?si=SIIe6l6BA6TiytZx" allowfullscreen loading="lazy"></iframe>
+            <span class="video-badge">Trending</span>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">ये देखे बिना ashwagandha का प्रयोग ना करे, जानें</h3>
+            <p class="video-desc">Before using Ashwagandha, know these essential precautions to avoid harmful side effects and ensure safe benefits.</p>
+          </div>
+        </div>
+
+        <div class="video-card playlist">
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=TqMIMfEOlppel8ze&amp;list=PLegX3WdunZQlrQ4KfCK9_0yZffUT9EbP_" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Complete Patient Education Series</h3>
+            <p class="video-desc">Digestive system diseases are conditions that affect the gastrointestinal tract, causing symptoms like pain, bloating, diarrhea, or constipation, and can impact overall health if left untreated.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-nav next" aria-label="Next video">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="youtube-cta-container">
+      <a href="https://www.youtube.com/@DrAnjul" target="_blank" class="youtube-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+        </svg>
+        Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- EVENTS SECTION -->
+<section id="events" class="events-section">
+  <div class="events-section-container">
+    <div class="events-section-header">
+      <h2 class="events-section-title" align="center">Upcoming Events & Workshops</h2>
+      <div class="events-divider"></div>
+    </div>
+
+    <div class="events-grid">
+      <!-- Event Card 1 -->
+      <div class="event-card">
+        <div class="event-date">
+          <span class="date-day">20</span>
+          <span class="date-month">May</span>
+        </div>
+        <div class="event-content">
+          <h3>Free Homeopathy Camp</h3>
+          <div class="event-meta">
+            <span class="location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              Rudrapur, Uttarakhand
+            </span>
+            <span class="event-type">In-Person</span>
+          </div>
+          <p class="event-excerpt">Join Dr. Anjul for a free consultation and awareness camp on natural healing methods.</p>
+          <div class="event-actions">
+            <button class="btn-register">Register Now</button>
+            <button class="btn-more-info">
+              <span>Details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="event-details">
+            <div class="details-content">
+              <h4>Event Details</h4>
+              <ul>
+                <li><strong>Time:</strong> 10:00 AM - 4:00 PM</li>
+                <li><strong>Venue:</strong> Community Health Center, Rudrapur</li>
+                <li><strong>Topics:</strong> Chronic pain management, Allergy relief, Immunity boosting</li>
+              </ul>
+              <p>This free camp will provide basic health screenings and personalized homeopathy advice. No prior registration required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="event-card">
+        <div class="event-date">
+          <span class="date-day">28</span>
+          <span class="date-month">May</span>
+        </div>
+        <div class="event-content">
+          <h3>Online Health Webinar</h3>
+          <div class="event-meta">
+            <span class="location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h1v2H7c-1.1 0-2 .9-2 2v7h2v-3h10v3h2v-7c0-1.1-.9-2-2-2h-1v-2h1zM7 8V5h10v3H7zm10 8H7v-2h10v2zm-3-4h-4v-2h4v2z"/>
+              </svg>
+              Zoom (Online)
+            </span>
+            <span class="event-type">Virtual</span>
+          </div>
+          <p class="event-excerpt">A virtual talk on boosting immunity through holistic treatment approaches.</p>
+          <div class="event-actions">
+            <button class="btn-register">Register Now</button>
+            <button class="btn-more-info">
+              <span>Details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="event-details">
+            <div class="details-content">
+              <h4>Webinar Details</h4>
+              <ul>
+                <li><strong>Time:</strong> 6:00 PM - 7:30 PM</li>
+                <li><strong>Platform:</strong> Zoom (link provided after registration)</li>
+                <li><strong>Topics:</strong> Seasonal allergies, Stress management, Natural immunity boosters</li>
+              </ul>
+              <p>Interactive session with Q&A. Recording available for registered participants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <button class="btn-load-more" id="load-more-events">
+        <span>View Past Events</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Event Gallery Section -->
+<section id="event-gallery" class="events-gallery-section">
+  <div class="events-gallery-container">
+    <div class="events-gallery-header">
+      <h2 class="events-gallery-title">Our Event Gallery</h2>
+      <div class="events-gallery-divider"></div>
+      <span class="events-gallery-subtitle">Moments & Memories</span>
+      <p class="events-gallery-description">Explore our past events, workshops, and community gatherings through these captured moments.</p>
+    </div>
+
+    <div class="events-gallery-grid">
+      <!-- Gallery Item 1 with multiple photos -->
+      <div class="events-gallery-card">
+        <div class="events-gallery-carousel">
+          <!-- Photo 1 -->
+          <div class="carousel-slide active">
+            <img src="images/camp1.jpg" alt="Free Homeopathy Camp - Photo 1" class="events-gallery-image" loading="lazy" />
+          </div>
+          <!-- Photo 2 -->
+          <div class="carousel-slide">
+            <img src="images/camp2.jpg" alt="Free Homeopathy Camp - Photo 2" class="events-gallery-image" loading="lazy" />
+          </div>
+          <!-- Photo 3 -->
+          <div class="carousel-slide">
+            <img src="images/camp3.jpg" alt="Free Homeopathy Camp - Photo 3" class="events-gallery-image" loading="lazy" />
+          </div>
+          
+          <div class="carousel-controls">
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+        
+        <div class="events-gallery-overlay">
+          <div class="events-gallery-content">
+            <h3 class="events-gallery-caption">Free Homeopathy Camp</h3>
+            <p class="events-gallery-date">May 20, 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 with multiple photos -->
+      <div class="events-gallery-card">
+        <div class="events-gallery-carousel">
+          <!-- Photo 1 -->
+          <div class="carousel-slide active">
+            <img src="images/consult1.jpg" alt="Consult - Photo 1" class="events-gallery-image" loading="lazy" />
+          </div>
+          <!-- Photo 2 -->
+          <div class="carousel-slide">
+            <img src="images/consult2.jpg" alt="Consult - Photo 2" class="events-gallery-image" loading="lazy" />
+          </div>
+          <!-- Photo 3 -->
+          <div class="carousel-slide">
+            <img src="images/consult3.jpg" alt="Consult - Photo 3" class="events-gallery-image" loading="lazy" />
+          </div>
+          
+          <div class="carousel-controls">
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+        
+        
+        
+        <div class="events-gallery-overlay">
+          <div class="events-gallery-content">
+            <h3 class="events-gallery-caption">Consultancy</h3>
+            <p class="events-gallery-date">May 28, 2025</p>
+          </div>
+        </div>
+      </div>
+      
+	<!-- Gallery Item 3 with multiple photos -->
+      <div class="events-gallery-card">
+        <div class="events-gallery-carousel">
+          <!-- Photo 1 -->
+          <div class="carousel-slide active">
+            <img src="images/clinic1.jpg" alt="Clinic - Photo 1" class="events-gallery-image" loading="lazy" />
+          </div>
+          <!-- Photo 2 -->
+          <div class="carousel-slide">
+            <img src="images/clinic2.jpg" alt="Clinic - Photo 2" class="events-gallery-image" loading="lazy" />
+          </div>
+          <!-- Photo 3 -->
+          <div class="carousel-slide">
+            <img src="images/clinic3.jpg" alt="Clinic - Photo 3" class="events-gallery-image" loading="lazy" />
+          </div>
+          
+          <div class="carousel-controls">
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+        
+        <div class="events-gallery-overlay">
+          <div class="events-gallery-content">
+            <h3 class="events-gallery-caption">Clinic</h3>
+            <p class="events-gallery-date">June 28, 2025</p>
+          </div>
+        </div>
+   	 </div>
+   	 <div>
+   	 	<!--  For making next button to middle  -->
+   	 </div>
+ <!-- More gallery items... -->
+    <div class="events-gallery-footer">
+      <button class="events-gallery-load-more" onclick="window.open('https://www.instagram.com/doctoranjul', '_blank')">
+        View More Events
+      </button>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="events-gallery-lightbox">
+    <span class="events-gallery-lightbox-close">&times;</span>
+    <div class="events-gallery-lightbox-content">
+      <img class="events-gallery-lightbox-image" src="" alt="" />
+      <div class="events-gallery-lightbox-caption"></div>
+    </div>
+    <button class="events-gallery-lightbox-prev">&#10094;</button>
+    <button class="events-gallery-lightbox-next">&#10095;</button>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-section-header">
+      
+      <h2 class="contact-section-title">Connect With Dr. Anjul</h2>
+      <div class="contact-divider"></div>
+      <span class="contact-section-subtitle">Get In Touch</span>
+      <p class="contact-section-description">Follow for health tips, updates, and to stay connected with our holistic healing community</p>
+    </div>
+
+    <div class="social-platforms">
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@DrAnjul" target="_blank" class="social-card youtube" data-platform="YouTube">
+        <div class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="social-info">
+          <h3>YouTube</h3>
+          <p>Health videos & tutorials</p>
+          <span class="social-handle">@DrAnjul</span>
+        </div>
+        <div class="social-cta">
+          <span>Subscribe</span>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=100087406594143" target="_blank" class="social-card facebook" data-platform="Facebook">
+        <div class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="social-info">
+          <h3>Facebook</h3>
+          <p>Community updates</p>
+          <span class="social-handle">Dr. Anjul</span>
+        </div>
+        <div class="social-cta">
+          <span>Follow</span>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/doctoranjul" target="_blank" class="social-card instagram" data-platform="Instagram">
+        <div class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="social-info">
+          <h3>Instagram</h3>
+          <p>Daily health tips</p>
+          <span class="social-handle">@doctoranjul</span>
+        </div>
+        <div class="social-cta">
+          <span>Follow</span>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Twitter/X -->
+      <a href="https://x.com/Doctor_Anjul" target="_blank" class="social-card twitter" data-platform="X (Twitter)">
+        <div class="social-icon">
+          <i class="fab fa-x-twitter"></i>
+        </div>
+        <div class="social-info">
+          <h3>X (Twitter)</h3>
+          <p>Quick health insights</p>
+          <span class="social-handle">@Doctor_Anjul</span>
+        </div>
+        <div class="social-cta">
+          <span>Follow</span>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Threads -->
+      <a href="https://www.threads.net/@doctoranjul" target="_blank" class="social-card threads" data-platform="Threads">
+        <div class="social-icon">
+          <i class="fab fa-threads"></i>
+        </div>
+        <div class="social-info">
+          <h3>Threads</h3>
+          <p>Health discussions</p>
+          <span class="social-handle">@doctoranjul</span>
+        </div>
+        <div class="social-cta">
+          <span>Follow</span>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:dranjul06@gmail.com" class="social-card email" data-platform="Email">
+        <div class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="social-info">
+          <h3>Email</h3>
+          <p>Direct contact</p>
+          <span class="social-handle">dranjul06@gmail.com</span>
+        </div>
+        <div class="social-cta">
+          <span>Contact</span>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="contact-footer">
+      <p>For appointments and consultations, please visit the <a href="#consultancy">consultation page</a></p>
+    </div>
+  </div>
+</section>
+
+ <!-- FOOTER SECTION -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo-link">
+          <img src="images/logo.png" alt="Dr. Anjul Homeopathy Logo" class="footer-logo" loading="lazy">
+        </a>
+        <p class="footer-tagline">Holistic Healing Through Homeopathy</p>
+        <p class="footer-about">Providing compassionate, personalized homeopathic care for over two decades with a focus on treating the root cause of illness.</p>
+        
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@DrAnjul" target="_blank" class="social-link youtube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100087406594143" target="_blank" class="social-link facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/doctoranjul" target="_blank" class="social-link instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/Doctor_Anjul" target="_blank" class="social-link twitter" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-nav-column">
+          <h3 class="footer-nav-title">Quick Links</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About Dr. Anjul</a></li>
+            <li><a href="#consultancy" class="footer-nav-link">Consultations</a></li>
+            <li><a href="#youtube" class="footer-nav-link">YouTube Videos</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-nav-column">
+          <h3 class="footer-nav-title">Resources</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#events" class="footer-nav-link">Upcoming Events</a></li>
+            <li><a href="#event-gallery" class="footer-nav-link">Event Gallery</a></li>
+            <li><a href="blog" class="footer-nav-link">Health Blog</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h3 class="footer-contact-title">Contact Information</h3>
+        <address class="footer-contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span>123 Healing Street, New Delhi, India</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt contact-icon"></i>
+            <a href="tel:+911234567890">+91 12345 67890</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <a href="mailto:info@dranjulhomeo.com">info@dranjulhomeo.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock contact-icon"></i>
+            <span>Mon-Sat: 9AM - 6PM</span>
+          </div>
+        </address>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3 class="newsletter-title">Health Newsletter</h3>
+        <p class="newsletter-desc">Subscribe to receive health tips, event updates, and special offers.</p>
+        
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">
+              <span>Subscribe</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+          <div class="form-agreement">
+            <input type="checkbox" id="footer-newsletter-agree" required>
+            <label for="footer-newsletter-agree">I agree to the privacy policy</label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <p class="copyright">&copy; 2025 Dr. Anjul Homeopathy Clinic. All rights reserved.</p>
+        
+        <nav class="legal-links">
+          <a href="terms#policy-section" class="legal-link">Privacy Policy</a>
+          <a href="terms#privacy-section" class="legal-link">Terms of Service</a>
+          <a href="terms#disclaimer-section" class="legal-link">Medical Disclaimer</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</footer>
+
+
+
+<script src="js/index.js"></script>
+<script src="js/home.js"></script>
+<script src="js/about.js"></script>
+<script src="js/youtube.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/events.js"></script>
+<script src="js/eventgall.js"></script>
+<script src="js/testimonial.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+</html>

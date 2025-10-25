@@ -2,7 +2,11 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+<<<<<<< HEAD
 			<item value="D:\projects\dr_anjul"/>
+=======
+			<item value="D:\dr_anjul"/>
+>>>>>>> 9f0313484191ff0b501d94b45e88bb765345492d
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

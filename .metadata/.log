@@ -96,3 +96,13 @@ java.lang.NullPointerException: Cannot invoke "com.microsoft.copilot.eclipse.cor
 
 !ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2025-10-24 18:06:48.928
 !MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\asus\AppData\Local\Temp\C__Users_asus_eclipse_jee-2025-09_eclipse_78d580f0-0480-454a-83de-35f3c013078c
+!SESSION 2025-10-24 21:50:03.618 -----------------------------------------------
+eclipse.buildId=4.38.0.20251009-0700
+java.version=25
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\dr_anjul
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-24 21:50:11.175
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
